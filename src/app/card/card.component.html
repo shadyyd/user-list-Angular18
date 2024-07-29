@@ -1,0 +1,19 @@
+<div
+  class="card text-center bg-light m-2 "
+  style="width: 12rem; border-radius: 1rem"
+>
+  <div class="card-body">
+    <div class="d-flex justify-content-center mb-3">
+      <img [src]="user.image" class="circle-img rounded-circle" alt="" />
+    </div>
+    <h6 class="card-subtitle mb-2 text-muted">{{ user.username }}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">{{ user.email }}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">{{ user.phone }}</h6>
+    <div class="position-absolute star">
+      <i
+        class="fa-solid fa-star"
+        [ngClass]="user.is_verified ? 'green' : 'red'"
+      ></i>
+    </div>
+  </div>
+</div>

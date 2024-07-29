@@ -1,0 +1,12 @@
+<form class="d-flex">
+  <input
+    #search
+    class="form-control me-2"
+    (keyup)="onSearch($event)"
+    type="text"
+    placeholder="Search..."
+  />
+  <button (click)="onClick(search, $event)" class="btn btn-outline-primary">
+    @if(search.value != ''){ Clear }@else{Search}
+  </button>
+</form>

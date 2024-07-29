@@ -1,0 +1,13 @@
+.app-container {
+  padding: 20px 0px;
+  width: 800px;
+  background-color: #e6e6e6;
+  border-radius: 12px;
+}
+
+.card-container {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
